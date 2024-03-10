@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/fb9074960e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <!--Division for notzy logo-->
+        <div class="logo">
+            <img src="Notzy.png" alt="Notzy"><sub>by CTC MITM</sub>
+        </div>
+    </header>
+    <!--Navbar layout-->
+    <nav>
+        <!--Cheakbor to manage slider-->
+        <input type="checkbox" id="slide" name="slide">
+        <div class="btn-box">
+            <!--Division for slider-->         
+            <div class="slider"></div>
+            <!--Sliding buttons-->
+            <button class="todo-btn" active><label for="slide">To-Do</label></button>
+            <button class="notes-btn"><label for="slide">Notes</label></button>
+        </div>
+    </nav>
+    <main>
+        <!--Container for to-do and notes-->
+        <div class="card">
+            <!--Input bar-->
+            <div class="form">
+                <div class="form-box">
+                    <input class="task" type="text" placeholder="Type here something to add">
+                    <button class="add">ADD</button>
+                </div>
+            </div>
+            <!--Division for To-do list-->
+            <div class="todo-list">
+                <!--Here content will write by JS-->
+            </div>
+            <!--Division for notes list-->
+            <div class="notes-list">
+                <!--Here content will write by JS-->
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
