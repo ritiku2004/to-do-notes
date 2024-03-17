@@ -131,6 +131,7 @@ main{
     height: 40px;
     border-radius: 0 15px 15px 0;
     background-color: blue;
+    cursor: pointer;
 }
 /*Design for to-do list*/
 .todo-list{
@@ -171,6 +172,7 @@ i{
     margin: 7px;
     font-size: 1.3rem;
     transition: 0.2s linear ;
+    cursor: pointer;
 }
 .fa-trash:hover{
     color: red;
@@ -251,6 +253,7 @@ i{
     font-size: 16px;
     overflow-y: hidden;
     transition: all 0.3s linear;
+    cursor: pointer;
 }
 .main-block{
     height: 100%;
