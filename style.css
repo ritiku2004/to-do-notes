@@ -184,13 +184,14 @@ i{
 .fa-circle-check:hover{
     color: rgb(0, 215, 0);
 }
+
 /*design for notes list*/
 .notes-list{
     position:relative;
     top: -85%;
     right: -100%;
     width: 100%;
-    height: 85%;
+    height: 100%;
     padding: 10px;
     border: none;
     text-align: center;
@@ -215,6 +216,115 @@ i{
     border: 1px solid rgb(0, 0, 0);
     box-shadow: 0 0 8px rgb(50, 132, 255);
 }
+
+.notes-section{
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.notes-container{
+    z-index: 1;
+    padding: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    height: 100%;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    overflow-y: scroll;
+}
+.notes-container::-webkit-scrollbar{
+    display: none;
+}
+.note-box{
+    margin: 17px;
+    padding: 6px;
+    width: 150px;
+    height: 140px;
+    border: 2px solid rgb(0, 196, 250);
+    border-radius: 15px;
+    background-color: rgb(218, 218, 218);
+    font-size: 16px;
+    overflow-y: hidden;
+    transition: all 0.3s linear;
+}
+.main-block{
+    height: 100%;
+    width: 100%;
+}
+.note-box h4{
+    margin: 3px;
+    padding: 0%;
+    letter-spacing: 1px;
+    color: blue;
+}
+.note-box p{
+    margin: 3px;
+    padding: 2px;
+}
+.add-note{
+    margin: 17px;
+    padding: 6px;
+    width: 150px;
+    height: 140px;
+    border: 2px solid rgb(0, 242, 255);
+    border-radius: 15px;
+    font-weight: 700;
+    background-color: rgb(0, 157, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.add-note i{
+    font-size: 30px;
+}
+.note-slide{
+    display: none;
+}
+.visi-slide{
+    padding: 15px;
+    position:fixed;
+    top: 25%;
+    left: 17%;
+    width: 67%;
+    height: 60%;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(0, 119, 255);
+    border-radius: 5px;
+    box-shadow: 0 0 8px rgb(0, 204, 255);
+    opacity: 1;
+    z-index: 10;
+    transition: all 0.7s linear;
+}
+.slide-title{
+    display: flex;
+    justify-content: space-between;
+}
+#note-title{
+    appearance: none;
+    width: 80%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 22px;
+    font-weight: 550;
+    margin: 0%;
+}
+#note{
+    resize: none;
+    width: 100%;
+    height: 50vh;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 18px;
+    overflow-y: scroll;
+}
 /*Designing for diffrent devices*/
 @media(max-width:900px) {
     .btn-box{
@@ -224,6 +334,61 @@ i{
         width: 70%;
         height: 80%;
         border-radius: 15px;
+    }
+}
+@media(max-width:1200px) {
+    .notes-container{
+        z-index: 1;
+        padding: 6px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        height: 100%;
+        width: 100%;
+        border: none;
+        border-radius: 5px;
+        overflow-y: scroll;
+    }
+    .note-box{
+        margin: 12px;
+        padding: 6px;
+        width: 150px;
+        height: 140px;
+        font-size: 15px;
+    }
+    .note-box h4{
+        margin: 2px;
+        padding: 0%;
+        letter-spacing: 1px;
+        color: blue;
+    }
+    .note-box p{
+        margin: 3px;
+        padding: 2px;
+    }
+    .add-note{
+        margin: 12px;
+        padding: 6px;
+        width: 150px;
+        height: 140px;
+    }
+    .visi-slide{
+        padding: 15px;
+        top: 18%;
+        left: 8%;
+        width: 85%;
+        height: 75%;
+    }
+    #note-title{
+        width: 75%;
+        font-size: 24px;
+        font-weight: 550;
+        margin: 0%;
+    }
+    #note{
+        width: 100%;
+        height: 65vh;
+        font-size: 18px;
     }
 }
 @media(max-width:450px) {
@@ -252,5 +417,61 @@ i{
     }
     .fa-circle-check{
         color: rgb(0, 215, 0);
+    }
+}
+
+@media(max-width:450px) {
+    .notes-container{
+        z-index: 1;
+        padding: 0px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        height: 100%;
+        width: 100%;
+        border: none;
+        border-radius: 5px;
+        overflow-y: scroll;
+    }
+    .note-box{
+        margin: 8px;
+        padding: 4px;
+        width: 120px;
+        height: 110px;
+        font-size: 11px;
+    }
+    .note-box h4{
+        margin: 1px;
+        padding: 0%;
+        letter-spacing: 1px;
+        color: blue;
+    }
+    .note-box p{
+        margin: 2px;
+        padding: 1px;
+    }
+    .add-note{
+        margin: 8px;
+        padding: 4px;
+        width: 120px;
+        height: 110px;
+    }
+    .visi-slide{
+        padding: 10px;
+        top: 18%;
+        left: 5%;
+        width: 90%;
+        height: 80%;
+    }
+    #note-title{
+        width: 70%;
+        font-size: 20px;
+        font-weight: 550;
+        margin: 0%;
+    }
+    #note{
+        width: 100%;
+        height: 75vh;
+        font-size: 15px;
     }
 }
