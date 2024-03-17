@@ -77,7 +77,7 @@ function addTodo(){
 //logic to cheack input have a content or not
 add.addEventListener("click",() => {
     if(data.value!='')
-        addNote();
+        addTodo();
     else {
         data.focus();
         alert("Write something.");
