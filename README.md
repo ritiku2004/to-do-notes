@@ -4,7 +4,7 @@ A simple and elegant to-do application built with **HTML**, **CSS**, and **JavaS
 
 ## 🚀 Live Demo
 
-[![🌐 View Deployment](https://img.shields.io/badge/Live%20Demo-Click%20Here-blue?style=for-the-badge)](https://your-deployment-link-here.com)
+[![🌐 View Deployment](https://img.shields.io/badge/Live%20Demo-Click%20Here-blue?style=for-the-badge)](https://ritiku2004.github.io/to-do-notes/)
 
 ## ✨ Features
 
@@ -45,5 +45,3 @@ Open in your browser (Chrome, Firefox, Safari…)
 3. **Commit** your changes
 4. **Push** to your branch
 5. Open a **Pull Request**
-
-> 💡 **Tip:** Easily deploy with **GitHub Pages** or **Netlify** for free hosting.
